@@ -1,10 +1,13 @@
 {
+  "homepage": "http://signorpao.github.io/react-animated-website-3",
   "name": "react-electronic-bank",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -18,6 +21,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
     "react-countup": "^6.3.1",
     "tailwindcss": "^3.1.8",
